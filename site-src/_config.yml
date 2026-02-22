@@ -2,3 +2,4 @@ theme: minima
 title: ClassSchedule 文档
 encoding: utf-8
 lang: zh-CN
+baseurl: /ClassScheduleSupport
