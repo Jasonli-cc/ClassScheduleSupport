@@ -7,11 +7,32 @@ SITE_SRC="${ROOT_DIR}/site-src"
 rm -rf "${SITE_SRC}"
 mkdir -p "${SITE_SRC}"
 mkdir -p "${SITE_SRC}/_includes"
+mkdir -p "${SITE_SRC}/_layouts"
 mkdir -p "${SITE_SRC}/en"
 
 # Override minima header to remove the top bar (repo name/header) on all pages.
 cat > "${SITE_SRC}/_includes/header.html" <<'HTML'
 <!-- header intentionally blank -->
+HTML
+
+# Custom layout: render only page content (no header/footer/title chrome).
+cat > "${SITE_SRC}/_layouts/plain.html" <<'HTML'
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="{{ site.encoding | default: "utf-8" }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  </head>
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>
 HTML
 
 cat > "${SITE_SRC}/_config.yml" <<'YAML'
@@ -24,7 +45,7 @@ YAML
 
 cat > "${SITE_SRC}/index.md" <<'MD'
 ---
-layout: page
+layout: plain
 title: 文档目录
 permalink: /
 ---
@@ -37,7 +58,7 @@ MD
 
 cat > "${SITE_SRC}/en/index.md" <<'MD'
 ---
-layout: page
+layout: plain
 title: Documentation
 permalink: /en/
 lang: en
@@ -63,7 +84,7 @@ write_page() {
 
   {
     echo "---"
-    echo "layout: page"
+    echo "layout: plain"
     echo "title: ${title}"
     echo "permalink: ${permalink}"
     if [[ -n "${lang}" ]]; then

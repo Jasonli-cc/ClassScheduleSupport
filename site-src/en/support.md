@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: Support
 permalink: /en/support/
 lang: en

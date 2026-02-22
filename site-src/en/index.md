@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: Documentation
 permalink: /en/
 lang: en

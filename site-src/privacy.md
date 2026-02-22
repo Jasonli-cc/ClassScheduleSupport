@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: 隐私政策
 permalink: /privacy/
 ---

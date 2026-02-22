@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: 支持文档
 permalink: /support/
 ---

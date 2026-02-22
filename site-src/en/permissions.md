@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: Permissions and Notifications
 permalink: /en/permissions/
 lang: en

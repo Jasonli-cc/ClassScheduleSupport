@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: 权限与通知说明
 permalink: /permissions/
 ---

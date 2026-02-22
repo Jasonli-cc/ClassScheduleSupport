@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: Terms of Service
 permalink: /en/terms/
 lang: en

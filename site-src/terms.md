@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: plain
 title: 用户协议与服务条款
 permalink: /terms/
 ---
