@@ -6,6 +6,12 @@ SITE_SRC="${ROOT_DIR}/site-src"
 
 rm -rf "${SITE_SRC}"
 mkdir -p "${SITE_SRC}"
+mkdir -p "${SITE_SRC}/_includes"
+
+# Override minima header to remove the top bar (repo name/header) on all pages.
+cat > "${SITE_SRC}/_includes/header.html" <<'HTML'
+<!-- header intentionally blank -->
+HTML
 
 cat > "${SITE_SRC}/_config.yml" <<'YAML'
 theme: minima
