@@ -11,10 +11,7 @@ Effective Date: 2026-02-22
 - Device system issues or third-party app issues
 - Issues related to system settings or network environments that are not caused by the app itself
 
-**Common Questions (To Be Added)**
-- How do I enable or disable notifications?
-- How do I use Siri shortcuts?
-- How do I back up or migrate data?
+**Common Questions**
 
 **Contact**
 If you need support, please contact:
