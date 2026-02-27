@@ -5,9 +5,10 @@ Effective Date: 2026-02-14
 **Required System Permissions**
 - Notifications: used for local reminders for courses and to-dos.
 - Siri and Search (App Intents): used to open Schedule/Today, query today's schedule or to-dos, and start/end Live Activity.
+- Calendar: used to synchronize courses and to-dos with the device calendar.
 
 **System Permissions Not Required**
-This app does not need and will not request the following permissions: location, contacts, camera, microphone, photos, Bluetooth, calendar, etc.
+This app does not need and will not request the following permissions: location, contacts, camera, microphone, photos, Bluetooth, etc.
 
 **Widgets and Live Activities**
 - Widgets: used to display today's schedule, today's to-dos, and semester progress on the Home Screen.
